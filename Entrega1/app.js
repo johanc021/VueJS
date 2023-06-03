@@ -11,7 +11,9 @@ createApp({
             this.contador++;
         },
         decrementar() {
-            this.contador--;
+            if (this.contador > 0) {
+                this.contador--;
+            }
         }
     }
 }).mount("#app")
